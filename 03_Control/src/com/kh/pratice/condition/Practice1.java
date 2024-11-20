@@ -7,7 +7,6 @@ public class Practice1 {
     Scanner sc = new Scanner(System.in);
 
     public void method1() {
-        Scanner sc = new Scanner(System.in);
 
         System.out.println("=== 메뉴 ===");
         System.out.println("1. 입력");
@@ -46,7 +45,7 @@ public class Practice1 {
     }
 
     public void method2() {
-        Scanner sc = new Scanner(System.in);
+
         System.out.print("홀/짝 맞추기 정수를 입력하세요: ");
         int number = sc.nextInt();
 
@@ -62,7 +61,7 @@ public class Practice1 {
     }
 
     public void method5() {
-        Scanner sc = new Scanner(System.in);
+
         String Id = "myId";
         String Pw = "myPassword12";
 
@@ -128,9 +127,39 @@ public class Practice1 {
 
     }
 
+    public void method6() {
+
+        System.out.print("권한을 확인하고자 하는 회원 등급: ");
+        String role = sc.next();
+        if ("관리자".equals(role)) {
+            System.out.println("회원관리, 게시글 관리, 게시글 작성, 게시글 조회, 댓글 작성");
+        } else if ("회원".equals(role)) {
+            System.out.println("게시글 작성, 게시글 조회, 댓글 작성");
+        } else if ("비회원".equals(role)) {
+            System.out.println("게시글 조회");
+        } else {
+            System.out.println("잘못 입력하셨습니다.");
+        }
+        /*
+        switch (role) {
+            case "관리자":
+                System.out.println("회원관리, 게시글 관리, 게시글 작성, 게시글 조회, 댓글 작성");
+                break;
+            case "회원":
+                System.out.println("게시글 작성, 게시글 조회, 댓글 작성");
+                break;
+            case "비회원":
+                System.out.println("게시글 조회");
+                break;
+            default:
+                System.out.println("잘못 입력하셨습니다.");
+                break;
+        }*/
+    }
+
     public void method10() {
-        String isTrue = "true";
-        while (isTrue.equals("true")) {
+        boolean isTrue = true;
+        while (isTrue) {
             System.out.println("****실행할 기능을 선택하세요.****");
             System.out.println("1. 메뉴 출력");
             System.out.println("2. 짝수/홀수");
@@ -145,7 +174,7 @@ public class Practice1 {
             System.out.print("선택 : ");
 
             int choice = sc.nextInt(); // 사용자가 번호를 선택하도록 입력하는 공간 작성
-
+            //sc.nextLine(); //한 줄 공백이 있을 경우 날림처리
             //선택한 번호에 따른 기능 실행
             switch (choice) {
                 case 1:
@@ -164,8 +193,10 @@ public class Practice1 {
                 case 4:
                     method4();
                     break;
-                case 3:
                 case 6:
+                    method6();
+                    break;
+                case 3:
                 case 7:
                 case 8:
                 case 9:
@@ -173,10 +204,10 @@ public class Practice1 {
                     break;
                 case 0:
                     System.out.println("프로그램을 종료합니다.");
-                    isTrue = "false";
+                    isTrue = false;
                     break;
-                    default:
-                        System.out.println("잘못된 입력입니다. 다시 선택해주세요.");
+                default:
+                    System.out.println("잘못된 입력입니다. 다시 선택해주세요.");
             }
         }
     }
