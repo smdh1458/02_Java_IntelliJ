@@ -2,7 +2,7 @@ package com.kh.oop.methodPre;
 
 public class ReturnRun2 {
     public static void main(String[] args) {
-        ReturnPre2 r2 = new ReturnPre2();
+       /* ReturnPre2 r2 = new ReturnPre2();
         System.out.println(r2.method1("홍길동",40));
 
         System.out.println(r2.method2(123,456));
@@ -22,5 +22,6 @@ public class ReturnRun2 {
         System.out.println(r2.method8(fr,"banana"));
 
         System.out.println(r2.method9(7));
+        */
     }
 }
