@@ -37,10 +37,10 @@ public class 자식 extends 부모{
 
     @Override
     public String toString() {
-        return "자식{" +
+        return "자식{" + super.toString() + '\''+
                 "취미='" + 취미 + '\'' +
                 ", 성씨='" + 성씨 + '\'' +
-                ", 주소='" + 주소 + '\'' + //여기 수정
+                ", 주소='" + 주소 + '\'' +
                 '}';
     }
 }
