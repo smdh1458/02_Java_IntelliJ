@@ -33,8 +33,14 @@
     ArrayList<Byte> list1 = new ArrayList<Byte>();
 
     만약에 타입을 지정해야 한다면 String, Integer, Double, Boolean 정도가 쓰일 것
+
+
+
+
+
+
     ArrayList<String> list1 = new ArrayList<String>();
-    ArrayList<String> list1 = new ArrayList<int>();
+    ArrayList<String> list1 = new ArrayList<String>();
     ArrayList<String> list1 = new ArrayList<String>();
     ArrayList<String> list1 = new ArrayList<String>();
     ArrayList<String> list1 = new ArrayList<String>();
