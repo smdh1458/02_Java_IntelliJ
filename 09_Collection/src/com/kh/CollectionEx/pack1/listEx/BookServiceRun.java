@@ -30,11 +30,12 @@ public class BookServiceRun {
                     int price = sc.nextInt();
 
                     //책 저장하기 기능 Bookservice 에서 설정
-                    bookService.addBook("title","author",price);
+                    bookService.addBook(title,author,price);
                     break;
                 case 2:
                     System.out.println("지우고자 하는 책의 제목을 입력하세요: ");
-                    String removeTitle = sc.nextLine();
+                    String title1 = sc.nextLine();
+                    bookService.removeBook(title1);
 
                     //만약에 책 제목이 존재한다면 책을 삭제했습니다.
 
