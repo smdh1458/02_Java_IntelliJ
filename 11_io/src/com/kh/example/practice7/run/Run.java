@@ -1,6 +1,6 @@
-package com.kh.pack1.example.practice7.run;
+package com.kh.example.practice7.run;
 
-import com.kh.pack1.example.practice7.model.vo.Employee;
+import com.kh.example.practice7.model.vo.Employee;
 
 public class Run {
     public static void main(String[] args){

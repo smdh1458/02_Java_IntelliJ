@@ -1,4 +1,4 @@
-package com.kh.pack1.example.practice7.model.vo;
+package com.kh.example.practice7.model.vo;
 
 // 이름 과목 점수
 
