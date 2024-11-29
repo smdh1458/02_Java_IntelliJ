@@ -15,12 +15,11 @@ public class StudentRun {
        System.out.println("학생 점수 평균: "+(int)scores[1]);
 
 
-        /*System.out.println("\n=========성적 결과 출력=========");
+        System.out.println("\n=========성적 결과 출력=========");
         for (Student s: sc.printStudent()){
-            String result = s.getScore() >= StudentController.CUT_LINE;
-            System.out.println(s.getScore()+"학생은"+ result);
+            String result = s.getScore() >= StudentController.CUT_LINE? "통과" : "재시험";;
+            System.out.println(s.getScore()+"학생은"+ result+"입니다.");
 
-        }*/
-
+        }
     }
 }
